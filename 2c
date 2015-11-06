@@ -1,0 +1,31 @@
+#2c Stochastic processes 
+#Implementation of the Hastings-Metropolis algorithm
+
+HastingsMetropolis = function(n, p, lenMC)
+{
+  X = numeric(lenMC)
+  X[1] = sample(0:n, size = 1)
+  for (i in 2:lenMC)
+  {
+    temp = X[i-1]
+    if #something
+    {
+      X_star = ifelse(temp==0, temp, temp-1)
+    }
+    else if #something else
+    {
+      X_star = 
+    }
+    else #third thing
+    {
+      X_star = ifelse(temp==n, temp, temp-1)
+    }
+  }
+  
+  
+}
+
+piBin = function(n, p, x) #Kanskje man ikke trenger denne 
+{
+  return (choose(n, x)*p^x*(1-p)^(n-x))
+}
